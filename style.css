@@ -1,0 +1,63 @@
+/* Reset básico para melhor consistência em navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página, garantindo altura total e fundo */
+body {
+    background-color: #91457f; /* Cor de fundo solicitada */
+    font-family: Arial, sans-serif;
+    color: white; /* Cor do texto */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Ocupa a altura total da tela (Viewport Height) */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contêiner principal para centralizar e agrupar o conteúdo */
+.container {
+    max-width: 400px; /* Limite de largura para mobile (ajuste se necessário) */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Espaço entre os elementos */
+}
+
+/* Estilo para a imagem da logo */
+.logo {
+    max-width: 300px; /* Tamanho da logo (ajuste se necessário) */
+    height: auto;
+    border-radius: 10px; /* Opcional: Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: Sombra sutil */
+}
+
+/* Estilo para a mensagem */
+.mensagem {
+    font-size: 1.2em; /* Tamanho do texto */
+    line-height: 1.5;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Estilo para a imagem do QR Code */
+.qrcode {
+    max-width: 250px; /* Tamanho do QR Code (ajuste se necessário) */
+    height: auto;
+    display: block; /* Garante que a imagem se comporte bem no layout */
+}
+
+/* Estilo opcional para o link do QR Code */
+a {
+    display: inline-block;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    transform: scale(1.05); /* Efeito ao passar o mouse (útil se testar no desktop) */
+}
